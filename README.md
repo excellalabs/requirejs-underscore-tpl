@@ -5,6 +5,9 @@
 Here are some [performance tests](http://jsperf.com/underscore-templates-precompiled-performance) that show the
 difference when rendering precompiled templates.
 
+## New features in 0.2.0
+- Catch and print template compilation errors. Tip: Use http://rowno.github.io/architect/ for pin point your error.
+
 ## Usage
 
 Use the `tpl!` prefix when loading a template.
@@ -49,4 +52,4 @@ For this plugin to work you need:
 - [RequireJS text plugin](https://github.com/requirejs/text)
 
 ## License
-See [LICENSE](https://raw.github.com/dciccale/requirejs-underscore-tpl/master/LICENSE-MIT)
+See [LICENSE](https://raw.github.com/excellalabs/requirejs-underscore-tpl/master/LICENSE-MIT)

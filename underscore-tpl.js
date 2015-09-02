@@ -12,6 +12,10 @@
  * https://github.com/dciccale/requirejs-underscore-tpl/blob/master/LICENSE-MIT
  */
 
+/*
+ * Modifications made by Doguhan Uluca (@duluca)
+ */
+
 define(['underscore', 'text'], function (_, text) {
 
   'use strict';
@@ -19,7 +23,7 @@ define(['underscore', 'text'], function (_, text) {
   var buildMap = {};
 
   var tpl = {
-    version: '0.1.0',
+    version: '0.2.0',
 
     load: function (name, req, onLoadNative, config) {
       var onLoad = function (content) {
@@ -28,7 +32,11 @@ define(['underscore', 'text'], function (_, text) {
         _.extend(_.templateSettings, config.underscoreTemplateSettings || {})
 
         // compile the template
-        content = _.template(content);
+        try {
+          content = _.template(content);
+        } catch(e) {
+          console.log('Template error for ' + name + '. Exception Details: ' + e);
+        }
 
         if (config.isBuild) {
           content = buildMap[name] = content.source;
