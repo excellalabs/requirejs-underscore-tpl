@@ -1,6 +1,6 @@
 {
   "name": "requirejs-underscore-tpl",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "RequireJS underscore-tpl, Loads and precompile underscore templates",
   "main": "underscore-tpl.js",
   "scripts": {
