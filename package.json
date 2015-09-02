@@ -1,0 +1,26 @@
+{
+  "name": "requirejs-underscore-tpl",
+  "version": "0.1.0",
+  "description": "RequireJS underscore-tpl, Loads and precompile underscore templates",
+  "main": "underscore-tpl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/excellalabs/requirejs-underscore-tpl.git"
+  },
+  "keywords": [
+    "requirejs",
+    "underscore",
+    "templates",
+    "r.js",
+    "tpl"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/excellalabs/requirejs-underscore-tpl/issues"
+  },
+  "homepage": "https://github.com/excellalabs/requirejs-underscore-tpl#readme"
+}
